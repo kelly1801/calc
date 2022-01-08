@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+@fontface{
+        font-family: "Roboto";
+        src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet");
+        font-weight: normal;
+        font-style: normal;
+    }
+    .roboto{
+        font-family: "Roboto";
+    }
+}
+@layer components{
+
+    
+    .btn-calc{
+        @apply roboto text-slate-500 text-sm text-center mt-3 p-4 h-10 w-10 mx-auto rounded-full bg-[#F3F4F6] shadow-md shadow-gray-300
+    }
+
+};
