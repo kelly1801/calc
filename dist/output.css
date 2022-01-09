@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Roboto;
   /* 4 */
 }
 
@@ -423,16 +423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-@fontface{
-  font-family: "Roboto";
-
-  src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet");
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -512,8 +502,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.btn-calc{
-  font-family: "Roboto";
+.btn-calc {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.75rem;
@@ -523,16 +512,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   padding: 1rem;
-  text-align: center;
+  text-align: justify;
+  font-family: Roboto;
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-weight: 700;
+  line-height: .75rem;
   --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: #d1d5db;
+  --tw-shadow-color: #6b7280;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.btn-calc:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 213 219 / var(--tw-bg-opacity));
+}
+
+.btn-calc-operator {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 214 233 / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: justify;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: .75rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #9ca3af;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.btn-calc-operator:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 99 230 / var(--tw-bg-opacity));
 }
 
 .absolute {
@@ -564,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.-ml-1 {
+  margin-left: -0.25rem;
 }
 
 .flex {
@@ -653,8 +682,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('../images/Calculator.png');
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-white {
@@ -668,7 +706,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0_-4px_-6px_-1px_0_-2px_-4px_-2px_0_-4px_6px_-1px_0_2px_4px_-2px\] {
+  --tw-shadow: 0 -4px -6px -1px 0 -2px -4px -2px 0 -4px 6px -1px 0 2px 4px -2px;
+  --tw-shadow-colored: 0 -4px -6px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-gray-300 {
   --tw-shadow-color: #d1d5db;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.active\:bg-\[\#DD922B\]:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 146 43 / var(--tw-bg-opacity));
 };

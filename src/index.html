@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="/dist/output.css" rel="stylesheet">
   <title>Calculator</title>
   </head>
@@ -15,28 +16,30 @@
   <div id="lector" class="h-[90px] w-[250px] bg-[#A5A5A5] border-8 border-black rounded-md ml-6 absolute mt-12"></div>
 <!--end lector-->
 <!--start buttons--> 
-<div id="button_section" class="mx-auto columns-4 gap-8 h-5/6 w-3/4 my-48">
+<div id="button_section" class="mx-auto columns-4 gap-8 h-5/6 w-3/4 my-48 ">
 
-  <button class="btn-calc bg-[#FE9505] text-white">C</button>
+  <button class="btn-calc bg-[#FE9505] active:bg-[#DD922B] text-white">C</button>
   <button class="btn-calc font-bold">7</button>
   <button class="btn-calc">4</button>
   <button class="btn-calc">1</button>
-  <button class="btn-calc">0</button>
+  <button class="btn-calc ">0</button>
   <button class="btn-calc bg-[#F5F0E3]"></button>
   <button class="btn-calc">8</button>
   <button class="btn-calc">5</button>
   <button class="btn-calc">2</button>
-  <button class="btn-calc">.</button>
+  <button class="btn-calc ">.</button>
   <button class="btn-calc bg-[#F5F0E3]">%</button>
   <button class="btn-calc">9</button>
   <button class="btn-calc">6</button>
   <button class="btn-calc">3</button>
-  <button class="btn-calc">{</button>
-  <button class="btn-calc">/</button>
-  <button class="btn-calc">X</button>
-  <button class="btn-calc">-</button>
-  <button class="btn-calc">D</button>
-  <button class="btn-calc bg-[#2D41F5] text-white">=</button>
+  <button class="btn-calc "><i class="text-base leading-4 -ml-1 material-icons">
+    backspace
+  </i></button>
+  <button class="btn-calc-operator">/</button>
+  <button class="btn-calc-operator">x</button>
+  <button class="btn-calc-operator">-</button>
+  <button class="btn-calc-operator">+</button>
+  <button id="equal" class="btn-calc bg-[#2D41F5] text-white">=</button>
 
 </div>
 <!--end buttons--> 
