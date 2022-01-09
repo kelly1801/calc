@@ -1,0 +1,1 @@
+let lector = document.getElementById('lector')
