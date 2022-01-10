@@ -11,9 +11,9 @@
 
  
 <!--principal container--> 
-<div id="principal_container" class="container overflow-hidden h-[500px] w-[300px] ml-[9.5rem] my-[4rem] bg-[#fbfbfb] rounded-xl shadow-md shadow-gray-300 mx-auto flex">
+<div id="principal_container" class="container h-[500px] w-[300px] ml-[9.5rem] my-[4rem] bg-[#fbfbfb] rounded-xl shadow-md shadow-gray-300 mx-auto flex">
 <!-- start lector--> 
-  <div id="lector" class="h-[90px] w-[250px] bg-[#A5A5A5] border-8 border-black rounded-md ml-6 absolute mt-12"></div>
+  <div id="lector" class="text-right font-['Roboto']  text-gray-800 tracking-widest h-[30px] w-[250px] bg-[#A5A5A5] border-8 border-black rounded-md ml-6 absolute mt-12 pt-[30px] pb-[50px]">0</div>
 <!--end lector-->
 <!--start buttons--> 
 <div id="button_section" class="mx-auto columns-4 gap-8 h-5/6 w-3/4 my-48 ">
@@ -22,8 +22,9 @@
   <button class="btn-calc font-bold">7</button>
   <button class="btn-calc">4</button>
   <button class="btn-calc">1</button>
-  <button class="btn-calc ">0</button>
-  <button class="btn-calc bg-[#F5F0E3]"></button>
+  <button class="btn-calc">0</button>
+<!--I still don't know what this button is supossed to do, so it triggers an error-->
+  <button class="btn-calc text-center bg-[#F5F0E3]">+/-</button>
   <button class="btn-calc">8</button>
   <button class="btn-calc">5</button>
   <button class="btn-calc">2</button>
@@ -32,11 +33,11 @@
   <button class="btn-calc">9</button>
   <button class="btn-calc">6</button>
   <button class="btn-calc">3</button>
-  <button class="btn-calc "><i class="text-base leading-4 -ml-1 material-icons">
+  <button class="btn-calc text-justify"><i class="text-base leading-4 -ml-1 material-icons">
     backspace
   </i></button>
   <button class="btn-calc-operator">/</button>
-  <button class="btn-calc-operator">x</button>
+  <button class="btn-calc-operator">*</button>
   <button class="btn-calc-operator">-</button>
   <button class="btn-calc-operator">+</button>
   <button id="equal" class="btn-calc bg-[#2D41F5] text-white">=</button>
@@ -47,6 +48,6 @@
 </div>
 
 
-<script src="index.js"></script>
+<script src="../index.js"></script>
 </body>
 </html>
